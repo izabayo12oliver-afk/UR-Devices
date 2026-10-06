@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+<header>
+        <div class="logo">
+            <img src="UR-LOGO.png" alt="UNIVERSITY OF RWANDA">
+            <h2>UNIVERSITY of RWANDA</h2>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="Features.html">Features</a>
+        </nav>
+        <div class="buttons">
+            <a href="login.html">Login</a>
+            <a href="signin.html">Signin</a>
+
+        </div>
+    </header>
+    <main class="staff-register-page">
+
+    <section class="staff-register-intro">
+
+        <h1> Staff and Student Registration</h1>
+
+        <p>
+            Create staff/student account to access
+            your information and device management.
+        </p>
+
+    </section>
+
+
+    <section class="staff-register-container">
+
+        <form class="staff-register-form">
+
+            <div class="form-heading">
+
+                <h2>Create Staff/student Account</h2>
+
+                <p>
+                    Only campus staff/student should
+                    complete this registration.
+                </p>
+
+            </div>
+
+
+            <!-- STAFF INFORMATION -->
+
+            <div class="staff-form-section">
+
+                <h3>Staff/student Information</h3>
+
+                <div class="staff-form-grid">
+
+                    <div class="staff-form-group">
+
+                        <label for="staff-name">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="staff-name"
+                            placeholder="Enter full name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="staff-form-group">
+
+                        <label for="staff-id">
+                            Staff/student ID
+                        </label>
+
+                        <input
+                            type="text"
+                            id="staff-id"
+                            placeholder="Enter staff/student ID"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="staff-form-group">
+
+                        <label for="staff-department">
+                            Department
+                        </label>
+
+                        <input
+                            type="text"
+                            id="staff-department"
+                            placeholder="Enter department"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="staff-form-group">
+
+                        <label for="staff-role">
+                            Staff Role
+                        </label>
+
+                        <select id="staff-role" required>
+
+                            <option value="">
+                                Select role
+                            </option>
+
+                            <option value="security">
+                                Security Officer
+                            </option>
+
+                            <option value="it">
+                                IT Staff
+                            </option>
+
+                            <option value="administrator">
+                                System Administrator
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="staff-form-group">
+
+                        <label for="staff-email">
+                            Official Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="staff-email"
+                            placeholder="staff@university.ac.rw"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="staff-form-group">
+
+                        <label for="staff-phone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="staff-phone"
+                            placeholder="+250 7XX XXX XXX"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ACCOUNT INFORMATION -->
+
+            <div class="staff-form-section">
+
+                <h3>Account Information</h3>
+
+                <div class="staff-form-grid">
+
+                    <div class="staff-form-group">
+
+                        <label for="staff-username">
+                            Username
+                        </label>
+
+                        <input
+                            type="text"
+                            id="staff-username"
+                            placeholder="Create username"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="staff-form-group">
+
+                        <label for="staff-password">
+                            Password
+                        </label>
+
+                        <input
+                            type="password"
+                            id="staff-password"
+                            placeholder="Create password"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="staff-form-group">
+
+                        <label for="staff-confirm-password">
+                            Confirm Password
+                        </label>
+
+                        <input
+                            type="password"
+                            id="staff-confirm-password"
+                            placeholder="Confirm password"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- AUTHORIZATION -->
+
+            <div class="staff-authorization">
+
+                <input
+                    type="checkbox"
+                    id="staff-agreement"
+                    required
+                >
+
+                <label for="staff-agreement">
+
+                    I confirm that I am student/staff at campus
+                     and will use this system only
+                    for legitimate university security and
+                    management purposes.
+
+                </label>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="staff-register-button"
+            >
+                Create Student Account
+                <span>→</span>
+            </button>
+
+
+            <p class="staff-login-link">
+
+                Already have Student account?
+
+                <a href="login.html">
+                    Student Login
+                </a>
+
+            </p>
+
+        </form>
+
+    </section>
+
+</main>
+
+<footer class="site-footer">
+
+    <p class="copyright">
+        © 2025 University of Rwanda. All rights reserved.
+    </p>
+
+    <div class="footer-line"></div>
+
+    <div class="footer-message">
+        <span>SAFER CAMPUS</span>
+        <span>|</span>
+        <span>SECURE DEVICES</span>
+        <span>|</span>
+        <span>A BETTER TOMORROW</span>
+    </div>
+
+    </footer>
+
+    
+</body>
+</html>

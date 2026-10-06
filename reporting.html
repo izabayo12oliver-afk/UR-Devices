@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporting</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+   
+    <header>
+        <div class="logo">
+            <img src="UR-LOGO.png" alt="UNIVERSITY OF RWANDA">
+            <h2>UNIVERSITY of RWANDA</h2>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="Features.html">Features</a>
+        </nav>
+        <div class="buttons">
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+
+        </div>
+    </header>
+
+
+    <main class="lost-report-page">
+
+    <!-- =========================
+         PAGE INTRO
+    ========================== -->
+
+    <section class="lost-report-hero">
+
+        <div class="lost-report-hero-content">
+
+            <div class="hero-line"></div>
+
+            <h1>Lost &amp; Stolen Reporting</h1>
+
+            <p>
+                Report your lost or stolen device and provide
+                the information needed by campus security to
+                help verify and recover it.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         REPORT CONTENT
+    ========================== -->
+
+    <section class="report-content">
+
+        <div class="report-layout">
+
+
+            <!-- =========================
+                 REPORT FORM
+            ========================== -->
+
+            <div class="report-form-card">
+
+                <div class="report-card-heading">
+
+                    <h2>Report a Lost or Stolen Device</h2>
+
+                    <p>
+                        Enter the details of the device and
+                        where it was last seen.
+                    </p>
+
+                </div>
+
+
+                <form class="lost-device-form">
+
+
+                    <!-- DEVICE IDENTIFICATION -->
+
+                    <div class="report-section">
+
+                        <h3>Device Information</h3>
+
+                        <div class="report-grid">
+
+
+                            <div class="report-group">
+
+                                <label for="report-serial">
+                                    Serial Number
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="report-serial"
+                                    placeholder="Enter registered serial number"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="report-group">
+
+                                <label for="report-device">
+                                    Device Type
+                                </label>
+
+                                <select
+                                    id="report-device"
+                                    required
+                                >
+
+                                    <option value="">
+                                        Select device
+                                    </option>
+
+                                    <option value="laptop">
+                                        Laptop
+                                    </option>
+
+                                    <option value="tablet">
+                                        Tablet
+                                    </option>
+
+                                    <option value="desktop">
+                                        Desktop
+                                    </option>
+
+                                    <option value="other">
+                                        Other
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="report-group">
+
+                                <label for="report-brand">
+                                    Brand
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="report-brand"
+                                    placeholder="e.g. Dell"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="report-group">
+
+                                <label for="report-model">
+                                    Model
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="report-model"
+                                    placeholder="e.g. Latitude 5420"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =========================
+                         INCIDENT INFORMATION
+                    ========================== -->
+
+                    <div class="report-section">
+
+                        <h3>Incident Information</h3>
+
+                        <div class="report-grid">
+
+
+                            <div class="report-group">
+
+                                <label for="lost-date">
+                                    Date Lost / Stolen
+                                </label>
+
+                                <input
+                                    type="date"
+                                    id="lost-date"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="report-group">
+
+                                <label for="lost-time">
+                                    Approximate Time
+                                </label>
+
+                                <input
+                                    type="time"
+                                    id="lost-time"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="report-group full-width">
+
+                                <label for="lost-location">
+                                    Last Known Location
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="lost-location"
+                                    placeholder="e.g. Library, Block A, Campus Gate"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="report-group full-width">
+
+                                <label for="incident-description">
+                                    Description of Incident
+                                </label>
+
+                                <textarea
+                                    id="incident-description"
+                                    rows="5"
+                                    placeholder="Describe what happened and where the device was last seen..."
+                                    required
+                                ></textarea>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =========================
+                         CONTACT INFORMATION
+                    ========================== -->
+
+                    <div class="report-section">
+
+                        <h3>Contact Information</h3>
+
+                        <div class="report-grid">
+
+
+                            <div class="report-group">
+
+                                <label for="report-name">
+                                    Your Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="report-name"
+                                    placeholder="Full name"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="report-group">
+
+                                <label for="report-id">
+                                    Student / Staff ID
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="report-id"
+                                    placeholder="Your ID"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="report-group">
+
+                                <label for="report-email">
+                                    Email
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="report-email"
+                                    placeholder="Your email"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="report-group">
+
+                                <label for="report-phone">
+                                    Phone Number
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    id="report-phone"
+                                    placeholder="+250 7XX XXX XXX"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =========================
+                         DECLARATION
+                    ========================== -->
+
+                    <div class="report-declaration">
+
+                        <input
+                            type="checkbox"
+                            id="report-confirm"
+                            required
+                        >
+
+                        <label for="report-confirm">
+
+                            I confirm that the information provided
+                            is accurate and that I am reporting a
+                            device that I own or am authorized to use.
+
+                        </label>
+
+                    </div>
+
+
+                    <!-- SUBMIT -->
+
+                    <button
+                        type="submit"
+                        class="submit-report-button"
+                    >
+
+                        Submit Lost / Stolen Report
+
+                        <span>→</span>
+
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <!-- =========================
+                 REPORT STATUS
+            ========================== -->
+
+            <aside class="report-status-card">
+
+                <div class="status-icon">
+                    !
+                </div>
+
+                <h2>Report Status</h2>
+
+                <p>
+                    Already reported a lost or stolen device?
+                    Check the status of your report.
+                </p>
+
+
+                <div class="status-search">
+
+                    <label for="case-number">
+                        Report / Case Number
+                    </label>
+
+                    <input
+                        type="text"
+                        id="case-number"
+                        placeholder="e.g. LSR-2026-00125"
+                    >
+
+                    <button type="button">
+                        Check Status
+                    </button>
+
+                </div>
+
+
+                <div class="status-information">
+
+                    <h3>Possible Status</h3>
+
+                    <div class="status-item">
+
+                        <span class="status-dot submitted"></span>
+
+                        <span>Submitted</span>
+
+                    </div>
+
+
+                    <div class="status-item">
+
+                        <span class="status-dot reviewing"></span>
+
+                        <span>Under Review</span>
+
+                    </div>
+
+
+                    <div class="status-item">
+
+                        <span class="status-dot found"></span>
+
+                        <span>Device Found</span>
+
+                    </div>
+
+
+                    <div class="status-item">
+
+                        <span class="status-dot closed"></span>
+
+                        <span>Case Closed</span>
+
+                    </div>
+
+                </div>
+
+            </aside>
+
+
+        </div>
+
+    </section>
+
+   </main>
+
+
+   <footer class="site-footer">
+
+    <p class="copyright">
+        © 2025 University of Rwanda. All rights reserved.
+    </p>
+
+    <div class="footer-line"></div>
+
+    <div class="footer-message">
+        <span>SAFER CAMPUS</span>
+        <span>|</span>
+        <span>SECURE DEVICES</span>
+        <span>|</span>
+        <span>A BETTER TOMORROW</span>
+    </div>
+
+    </footer>
+
+
+</body>
+</html>

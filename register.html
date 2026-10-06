@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+
+    <header>
+        <div class="logo">
+            <img src="UR-LOGO.png" alt="UNIVERSITY OF RWANDA">
+            <h2>UNIVERSITY of RWANDA</h2>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="Features.html">Features</a>
+        </nav>
+        <div class="buttons">
+            <a href="login.html">Login</a>
+            <a href="signin.html">Signin</a>
+
+        </div>
+    </header>
+
+    <main class="register-page">
+
+    <!-- PAGE INTRODUCTION -->
+
+    <section class="register-intro">
+
+        <h1>Register Your Device</h1>
+
+        <p>
+            Register your laptop or other personal device to help
+            protect your equipment and verify ownership on campus.
+        </p>
+
+    </section>
+
+
+    <!-- REGISTRATION FORM -->
+
+    <section class="registration-container">
+
+        <form class="registration-form">
+
+            <!-- =========================
+                 OWNER INFORMATION
+            ========================== -->
+
+            <div class="form-section">
+
+                <h2>Owner Information</h2>
+
+                <p class="section-description">
+                    Enter the information of the person who owns
+                    or is responsible for the device.
+                </p>
+
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label for="full-name">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="full-name"
+                            name="full_name"
+                            placeholder="Enter your full name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="student-id">
+                            Student / Staff ID
+                        </label>
+
+                        <input
+                            type="text"
+                            id="student-id"
+                            name="student_id"
+                            placeholder="Enter your ID"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="department">
+                            Department / Faculty
+                        </label>
+
+                        <input
+                            type="text"
+                            id="department"
+                            name="department"
+                            placeholder="Enter your department"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="campus">
+                            Campus
+                        </label>
+
+                        <select id="campus" name="campus" required>
+
+                            <option value="">
+                                Select campus
+                            </option>
+
+                            <option value="campus-1">
+                                Campus 1
+                            </option>
+
+                            <option value="campus-2">
+                                Campus 2
+                            </option>
+
+                            <option value="campus-3">
+                                Campus 3
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="example@email.com"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="+250 7XX XXX XXX"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 DEVICE INFORMATION
+            ========================== -->
+
+            <div class="form-section">
+
+                <h2>Device Information</h2>
+
+                <p class="section-description">
+                    Enter the identifying information of your laptop
+                    or other registered equipment.
+                </p>
+
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label for="device-type">
+                            Device Type
+                        </label>
+
+                        <select
+                            id="device-type"
+                            name="device_type"
+                            required
+                        >
+
+                            <option value="">
+                                Select device type
+                            </option>
+
+                            <option value="laptop">
+                                Laptop
+                            </option>
+
+                            <option value="tablet">
+                                Tablet
+                            </option>
+
+                            <option value="desktop">
+                                Desktop Computer
+                            </option>
+
+                            <option value="other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="brand">
+                            Brand / Manufacturer
+                        </label>
+
+                        <input
+                            type="text"
+                            id="brand"
+                            name="brand"
+                            placeholder="e.g. Dell, HP, Lenovo"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="model">
+                            Model
+                        </label>
+
+                        <input
+                            type="text"
+                            id="model"
+                            name="model"
+                            placeholder="e.g. Latitude 5420"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="serial-number">
+                            Serial Number
+                        </label>
+
+                        <input
+                            type="text"
+                            id="serial-number"
+                            name="serial_number"
+                            placeholder="Enter device serial number"
+                            required
+                        >
+
+                        <small>
+                            Usually found on the bottom of the laptop
+                            or on the manufacturer's label.
+                        </small>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="asset-tag">
+                            University Asset Tag
+                            <span>(if available)</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="asset-tag"
+                            name="asset_tag"
+                            placeholder="e.g. UR-IT-00245"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="color">
+                            Device Color
+                        </label>
+
+                        <input
+                            type="text"
+                            id="color"
+                            name="color"
+                            placeholder="e.g. Black"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="operating-system">
+                            Operating System
+                        </label>
+
+                        <select
+                            id="operating-system"
+                            name="operating_system"
+                        >
+
+                            <option value="">
+                                Select operating system
+                            </option>
+
+                            <option value="windows">
+                                Windows
+                            </option>
+
+                            <option value="macos">
+                                macOS
+                            </option>
+
+                            <option value="linux">
+                                Linux
+                            </option>
+
+                            <option value="other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 OWNERSHIP
+            ========================== -->
+
+            <div class="form-section">
+
+                <h2>Ownership Information</h2>
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label for="ownership">
+                            Ownership Type
+                        </label>
+
+                        <select
+                            id="ownership"
+                            name="ownership"
+                            required
+                        >
+
+                            <option value="">
+                                Select ownership
+                            </option>
+
+                            <option value="personal">
+                                Personal Device
+                            </option>
+
+                            <option value="university">
+                                University Device
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="purchase-date">
+                            Date Acquired
+                        </label>
+
+                        <input
+                            type="date"
+                            id="purchase-date"
+                            name="purchase_date"
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 AGREEMENT
+            ========================== -->
+
+            <div class="verification-box">
+
+                <label class="checkbox-label">
+
+                    <input
+                        type="checkbox"
+                        name="agreement"
+                        required
+                    >
+
+                    <span>
+                        I confirm that the information provided is
+                        accurate and that I am the owner or authorized
+                        user of this device.
+                    </span>
+
+                </label>
+
+            </div>
+
+
+            <!-- =========================
+                 SUBMIT
+            ========================== -->
+
+            <div class="form-actions">
+
+                <button
+                    type="submit"
+                    class="register-device-button"
+                >
+                    Register Device
+                    <span>→</span>
+                </button>
+
+            </div>
+
+        </form>
+
+    </section>
+
+</main>
+
+<footer class="site-footer">
+
+    <p class="copyright">
+        © 2025 University of Rwanda. All rights reserved.
+    </p>
+
+    <div class="footer-line"></div>
+
+    <div class="footer-message">
+        <span>SAFER CAMPUS</span>
+        <span>|</span>
+        <span>SECURE DEVICES</span>
+        <span>|</span>
+        <span>A BETTER TOMORROW</span>
+    </div>
+
+    </footer>
+</body>
+</html>
